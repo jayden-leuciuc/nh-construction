@@ -73,7 +73,7 @@ nav {
 .hero {
     width: 100%;
     height: 50vh;
-    background-image: url('/exc.jpg');
+    background-image: url('/work.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -182,6 +182,53 @@ nav {
                 opacity: 0.8;
             }
         }
+    }
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/exc.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+        margin: 1rem;
+        color: white;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 5px;
+        max-width: 450px;
+        background-color: white;
+        text-align: center;
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: bolder;
+            color: black;
+            margin: 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    
     }
 }
 

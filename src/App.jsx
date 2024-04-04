@@ -32,7 +32,7 @@ function App() {
       <div className="hero">
         <div className="text-overlay">
           <h1>Building the Future</h1>
-          <p>Providing excavation services in Tennessee.</p>
+          <p>Excavation services in Tennessee</p>
           <a href='#contact'>Request a Quote Now</a>
         </div>
       </div>
@@ -49,7 +49,7 @@ function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
           {isError && <h1>There was an error submitting the form. Please try again later.</h1>}
 
-          {isSubmitted && <h1>Thank you for your submission. We will get back to you shortly.</h1> }
+          {isSubmitted && <h1>Thank you for your submission. We will get back to you shortly.</h1>}
 
           {!isSubmitted && !isError &&
             <>
@@ -81,6 +81,17 @@ function App() {
               <button type="submit">Get Quote</button>
             </>}
         </form>
+      </div>
+
+      <div className="services">
+          <h1>Our Services</h1>
+        <div className="card">
+          <img src="/work.jpg" className="card-img-top" alt="..." />
+          <div className="card-body">
+            <h1 className="card-title">Excavation</h1>
+            <p className="card-text"> Excavation services are essential for construction projects, providing the groundwork necessary for building foundations. This involves tasks like land clearing, trenching, and grading, ensuring a stable base for construction. Professional excavation utilizes specialized equipment and techniques for efficient and safe completion of these tasks, laying the foundation for your next project. </p>
+          </div>
+        </div>
       </div>
 
       <div className="footer">
