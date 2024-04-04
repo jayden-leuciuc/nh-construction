@@ -84,12 +84,35 @@ function App() {
       </div>
 
       <div className="services">
-          <h1>Our Services</h1>
-        <div className="card">
-          <img src="/work.jpg" className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h1 className="card-title">Excavation</h1>
-            <p className="card-text"> Excavation services are essential for construction projects, providing the groundwork necessary for building foundations. This involves tasks like land clearing, trenching, and grading, ensuring a stable base for construction. Professional excavation utilizes specialized equipment and techniques for efficient and safe completion of these tasks, laying the foundation for your next project. </p>
+        <h1>Our Services</h1>
+        <div className="ccard">
+          <div id="carouselExample" className="carousel carousel-dark slide">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src="/slideshow1.jpg" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item">
+                <img src="/slideshow2.jpg" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item">
+                <img src="/slideshow3.jpg" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item">
+                <img src="/slideshow4.jpg" className="d-block w-100" alt="..." />
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div className="cbody">
+            <h1 className="ctitle">Excavation</h1>
+            <p className="ctext"> Excavation services are essential for construction projects, providing the groundwork necessary for building foundations. This involves tasks like land clearing, trenching, and grading, ensuring a stable base for construction. Professional excavation utilizes specialized equipment and techniques for efficient and safe completion of these tasks, laying the foundation for your next project. </p>
           </div>
         </div>
       </div>
@@ -102,7 +125,7 @@ function App() {
           </div>
           <div className="contact">
             <h3>Contact Us</h3>
-            <a href="mailto:Newhope.construction.inc@gmail.com"> <MdEmail /> Newhope.construction.inc@gmail.com</a>
+            <a href="mailto:Newhope.construction.inc@gmail.com"> <MdEmail /> Email </a>
             <a href="tel:+18655852264"> <FaPhone /> (865) 585 2264</a>
           </div>
         </div>

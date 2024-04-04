@@ -73,7 +73,7 @@ nav {
 .hero {
     width: 100%;
     height: 50vh;
-    background-image: url('/work.jpg');
+    background-image: url('/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -202,7 +202,7 @@ nav {
         color: white;
     }
 
-    .card {
+    .ccard {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -213,8 +213,12 @@ nav {
         max-width: 450px;
         background-color: white;
         text-align: center;
-
-        .card-title {
+        .carousel-item img {
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+        .ctitle {
             font-size: 2rem;
             font-weight: bolder;
             color: black;
